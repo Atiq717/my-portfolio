@@ -1,145 +1,144 @@
 @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(50%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(50%);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#about {
+  padding: 50px 0;
+  color: #ababab;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-right: 5%;
+  animation: slideInRight 1.5s ease-in-out;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-col-1 img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  opacity: 0.7;
+  object-fit: contain;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.sub-title {
+  font-size: 3.75rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.sub-title span {
+  color: #007bff;
+  -webkit-text-stroke: 0.2px #fff;
+}
+
+.tab-titles {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+
+.tab-links::after {
+  content: ' ';
+  width: 0;
+  height: 3px;
+  background: #007bff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #fff;
+  font-size: 14px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+@media (max-width: 768px) {
   #about {
-    padding: 50px 0;
-    color: #ababab;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    padding-right: 5%;
-    animation: slideInRight 1.5s ease-in-out;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    margin-left: 25%;
     width: 100%;
   }
-  
-  .about-col-1 {
-    flex-basis: 35%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .about-col-1 img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 15px;
-    opacity: 0.7;
-    object-fit: contain;
-  }
-  
+
+  .about-col-1,
   .about-col-2 {
-    flex-basis: 60%;
-    background-color: rgba(0, 0, 0, 0.5);
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .about-col-1 {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .about-col-2 {
     padding: 20px;
-    border-radius: 10px;
-    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5);
   }
-  
+
   .sub-title {
-    font-size: 3.75rem;
-    font-weight: 600;
-    color: #fff;
+    font-size: 2.5rem;
   }
-  
-  .sub-title span {
-    color: #007bff;
-    -webkit-text-stroke: 0.2px #fff;
-  }
-  
+
   .tab-titles {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0 40px;
+    justify-content: center;
   }
-  
-  .tab-links {
-    margin-right: 2rem;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    position: relative;
-    color: #fff;
-  }
-  
-  .tab-links::after {
-    content: ' ';
-    width: 0;
-    height: 3px;
-    background: #007bff;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-  }
-  
-  .tab-links.active-link::after {
-    width: 100%;
-  }
-  
-  .tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-  }
-  
-  .tab-contents ul li span {
-    color: #fff;
-    font-size: 14px;
-  }
-  
-  .tab-contents {
-    display: none;
-  }
-  
-  .active-tab {
-    display: block;
-  }
-  
-  @media (max-width: 768px) {
-    #about {
-      margin-left: 25%;
-      width: 100%;
-    }
-  
-    .about-col-1,
-    .about-col-2 {
-      flex-basis: 100%;
-      text-align: center;
-    }
-  
-    .about-col-1 {
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-  
-    .about-col-2 {
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-  
-    .sub-title {
-      font-size: 2.5rem;
-    }
-  
-    .tab-titles {
-      justify-content: center;
-    }
-  }
-  
+}

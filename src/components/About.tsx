@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './css/About.css';
 
 const About: React.FC = () => {
-  const opentab = (tabname: string) => {
+  const opentab = (event: React.MouseEvent<HTMLParagraphElement>, tabname: string) => {
     const tablinks = document.getElementsByClassName('tab-links');
     const tabcontents = document.getElementsByClassName('tab-contents');
 
-    for (const tablink of tablinks) {
-      tablink.classList.remove("active-link");
+    for (let i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active-link");
     }
-    for (const tabcontent of tabcontents) {
-      tabcontent.classList.remove("active-tab");
+    for (let i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].classList.remove("active-tab");
     }
     (event.currentTarget as HTMLElement).classList.add("active-link");
     document.getElementById(tabname)?.classList.add("active-tab");
   };
+
+  useEffect(() => {
+    const defaultTab = document.querySelector('.tab-links') as HTMLElement;
+    defaultTab.click();
+  }, []);
 
   return (
     <section id="about">
@@ -29,9 +34,9 @@ const About: React.FC = () => {
               My personal strengths include determination, generosity, and consideration for others. I am a hardworking individual, who is trustworthy with a warm personality. I am highly confident and have the ability to work on my own as well as a team. I have the right attitude, aptitude and charisma to be successful in the position given. I have innovative ideas and a strong understanding of what stakeholders are requesting. I am a hardworking individual with excellent communication skills and I am comfortable communicating at all levels. I am determined to achieve my goals, willing to persist with tasks and new challenges, with an urge to succeed and make a positive impact within the workplace.
             </p>
             <div className="tab-titles">
-              <p className="tab-links active-link" onClick={() => opentab('skills')}>Skills</p>
-              <p className="tab-links" onClick={() => opentab('experience')}>Experience</p>
-              <p className="tab-links" onClick={() => opentab('education')}>Education</p>
+              <p className="tab-links active-link" onClick={(event) => opentab(event, 'skills')}>Skills</p>
+              <p className="tab-links" onClick={(event) => opentab(event, 'experience')}>Experience</p>
+              <p className="tab-links" onClick={(event) => opentab(event, 'education')}>Education</p>
             </div>
             <div className="tab-contents active-tab" id="skills">
               <ul>
