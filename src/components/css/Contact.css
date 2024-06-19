@@ -1,0 +1,44 @@
+#contact {
+    width: 100%;
+}
+
+#contact .container-fluid {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#contact .heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#contact .heading span {
+    color: #007bff; /* Adjust the color as needed */
+}
+
+#contact .form-control {
+    margin-bottom: 1rem;
+    padding: 1.25rem 1.5rem;
+    font-size: 1rem;
+}
+
+#contact .btn-primary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+@media (min-width: 768px) {
+    #contact .form-control {
+        margin-bottom: 1.5rem;
+    }
+}
+.text-danger {
+    color: red;
+  }
+  

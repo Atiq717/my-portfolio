@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 10px;
+    margin-right: 10%;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
