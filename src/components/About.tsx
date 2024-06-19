@@ -2,7 +2,6 @@ import React from 'react';
 import './css/About.css';
 
 const About: React.FC = () => {
-
   const opentab = (tabname: string) => {
     const tablinks = document.getElementsByClassName('tab-links');
     const tabcontents = document.getElementsByClassName('tab-contents');
@@ -15,7 +14,7 @@ const About: React.FC = () => {
     }
     (event.currentTarget as HTMLElement).classList.add("active-link");
     document.getElementById(tabname)?.classList.add("active-tab");
-  }
+  };
 
   return (
     <section id="about">

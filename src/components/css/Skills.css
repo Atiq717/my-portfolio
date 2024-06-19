@@ -62,4 +62,15 @@
     font-size: 1rem;
     color: #666;
   }
+  @media (max-width: 768px) {
+    .skills{
+        width: 100vh;
+    }
+    .skills-grid{
+        width: 100vh;
+    }
+    .skills-section{
+        width: 100vh;
+    }
+}
   

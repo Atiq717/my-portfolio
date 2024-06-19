@@ -23,7 +23,7 @@ const Header: React.FC = () => {
               <Nav.Link href="#">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#skills">Skills</Nav.Link>
-              <Nav.Link href='#cards'>Projects</Nav.Link>
+              <Nav.Link href="#cards">Projects</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             <span className="second-header">Khan</span>
             <br />
           </h1>
-          <h1 className='uk'>From The UK</h1>
+          <h1 className="uk">From The UK</h1>
         </div>
         <div className="btn-box">
           <Button onClick={handleShow} className="btn btn-primary">C.V</Button>

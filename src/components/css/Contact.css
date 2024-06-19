@@ -33,12 +33,24 @@
     padding-bottom: 3rem !important;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    #contact .container-fluid {
+        width: 100vh;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+
     #contact .form-control {
         margin-bottom: 1.5rem;
     }
 }
+
 .text-danger {
     color: red;
-  }
-  
+}

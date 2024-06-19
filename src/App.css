@@ -35,7 +35,7 @@
   width: 100%;
   height: 100vh;
   background-image: url('/src/assets/image/background.2.png');
-  background-size: 50%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
@@ -48,12 +48,12 @@
 
 .header .navbar {
   width: 100%;
-  padding: 0 20px; 
+  padding: 0 20px;
   animation: fadeIn 2s ease-in-out;
 }
 
 .header .navbar-nav .nav-link {
-  margin-right: 20px; 
+  margin-right: 20px;
   font-size: 18px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .header-text {
-  width: 100vh;
+  width: 100%;
   font-size: 25px;
   margin-top: 5%;
 }
@@ -75,7 +75,6 @@
 
 .header-text span {
   display: inline-block;
-  margin-left: 11.5%;
   font-size: 75px;
   color: #0039a6;
   font-weight: 1000;
@@ -84,7 +83,7 @@
 }
 
 .header-text .second-header {
-  margin-left: 47%;
+  margin-left: 10%;
   animation: fadeInRight 2s ease-in-out;
 }
 
@@ -94,13 +93,13 @@
 }
 
 .uk {
-  margin-left: 60.5%;
+  margin-left: 10%;
   animation: fadeInRight 3s ease-in-out;
 }
 
 .btn-box {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   width: 100%;
   margin-top: 20px;
   animation: fadeInLeft 2.5s ease-in-out;
@@ -108,8 +107,33 @@
 
 .btn-box .btn {
   margin-right: 10px;
-  padding: 15px 30px; 
-  font-size: 20px; 
-  width: 150px; 
-  text-align: center; 
+  padding: 15px 30px;
+  font-size: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .header-text span,
+  .header-text .second-header,
+  .header-text .third-header,
+  .uk {
+    margin-left: 0;
+    font-size: 50px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-box .btn {
+    margin-bottom: 10px;
+    width: auto;
+  }
 }
