@@ -127,9 +127,9 @@ const CVModal: React.FC<CVModalProps> = ({ show, handleClose }) => {
         <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
-        <Button variant="primary" href="src/assets/pdf/MohammedKhan.c.v.pdf" download>
+        <a href="src/assets/pdf/MohammedKhan.c.v.pdf" download className="btn btn-primary">
           Download CV
-        </Button>
+        </a>
       </Modal.Footer>
     </Modal>
   );
