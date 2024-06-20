@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import logoBlue from '../assets/image/logo-blue.png';
+import logoBlue from '../../public/image/logo-blue.png';
 import CVModal from './CVModal';
 import './css/Header.css';
 
@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   const handleClose = () => setShowModal(false);
 
   return (
-    <header className="header">
+    <header className="header container-fluid">
       <Navbar bg="black" variant="dark" expand="lg">
         <Container fluid>
           <Navbar.Brand href="#">

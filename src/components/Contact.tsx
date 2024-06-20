@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-5">
+    <section id="contact" className="py-5 container-fluid">
       <div className="container-fluid">
         <h2 className="heading text-center">Contact <span>Me!</span></h2>
         <Form ref={form} noValidate validated={validated} onSubmit={sendEmail}>
