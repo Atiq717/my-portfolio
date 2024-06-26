@@ -29,7 +29,7 @@ body {
     align-items: center;
     justify-content: center;
     position: sticky;
-    top: 0;
+    top: 0; 
     box-sizing: border-box;
     flex-basis: 50%;
   }
@@ -58,35 +58,35 @@ body {
   }
   
   .card:nth-child(1) {
-    background: url('src/assets/image/project1.png') no-repeat;
+    background: url('../../../public/image/project1.png') no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 5;
   }
   
   .card:nth-child(2) {
-    background: url('src/assets/image/project2.png') no-repeat;
+    background: url('../../../public/image/project2.png') no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 4;
   }
   
   .card:nth-child(3) {
-    background: url('src/assets/image/project3.png') no-repeat;
+    background: url('../../../public/image/project3.png') no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 3;
   }
   
   .card:nth-child(4) {
-    background: url('src/assets/image/project4.png') no-repeat;
+    background: url('../../../public/image/project4.png') no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 2;
   }
   
   .card:nth-child(5) {
-    background: url('src/assets/image/project5.png') no-repeat;
+    background: url('../../../public/image/project5.png') no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 1;

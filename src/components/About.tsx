@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './css/About.css';
+import picture from '../../public/image/picture.png';
 
 const About: React.FC = () => {
   const opentab = (event: React.MouseEvent<HTMLParagraphElement>, tabname: string) => {
@@ -26,7 +27,7 @@ const About: React.FC = () => {
       <div className="container">
         <div className="row">
           <div className="about-col-1">
-            <img src="/src/assets/image/picture.png" alt="picture" />
+            <img src={picture} alt="picture" />
           </div>
           <div className="about-col-2">
             <h2 className="sub-title">About <span>Me!</span></h2>

@@ -137,3 +137,63 @@
     width: auto;
   }
 }
+
+/* General responsive settings */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header, .header-content, .footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-content {
+    padding: 20px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .header-text span {
+    font-size: 36px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .btn-box .btn {
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .about-section, .skills-section, .contact-section {
+    padding: 20px;
+  }
+
+  .about-col-1, .about-col-2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .contact-section form {
+    width: 100%;
+  }
+
+  .contact-section .form-control {
+    margin-bottom: 1.5rem;
+  }
+}
