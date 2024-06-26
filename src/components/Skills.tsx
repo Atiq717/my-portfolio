@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Skills.css';
-import jqueryIcon from '../../public/image/jqueryicon.png';
+import jqueryIcon from '../assets/image/jqueryicon.png';
 
 const skills = [
   { name: 'HTML', icon: 'fab fa-html5', color: '#E34F26' },
@@ -24,7 +24,7 @@ const skills = [
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="skills-section">
+    <section id="skills" className="skills-section container-fluid">
       <h2 className="skills-title"><span>My</span> Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (

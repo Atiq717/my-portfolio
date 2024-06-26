@@ -78,7 +78,7 @@ const Cards: React.FC = () => {
   }, []);
 
   return (
-    <section id="cards">
+    <section id="cards" className='container-fluid'>
       <div className="center">
         <div className="top">Projects</div>
         <div className="stack-area" ref={stackAreaRef}>

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './css/About.css';
-import picture from '../../public/image/picture.png';
 
 const About: React.FC = () => {
   const opentab = (event: React.MouseEvent<HTMLParagraphElement>, tabname: string) => {
@@ -23,7 +22,7 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <section id="about">
+    <section id="about" className='container-fluid'>
       <div className="container">
         <div className="row">
           <div className="about-col-1">

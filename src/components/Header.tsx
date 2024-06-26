@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   const handleClose = () => setShowModal(false);
 
   return (
-    <header className="header">
+    <header className="header container-fluid">
       <Navbar bg="black" variant="dark" expand="lg">
         <Container fluid>
           <Navbar.Brand href="#">
