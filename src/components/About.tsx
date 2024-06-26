@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './css/About.css';
+import picture from '../../public/image/picture.png'
 
 const About: React.FC = () => {
   const opentab = (event: React.MouseEvent<HTMLParagraphElement>, tabname: string) => {

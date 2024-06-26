@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Skills.css';
-import jqueryIcon from '../assets/image/jqueryicon.png';
+import jqueryIcon from '../../public/image/jqueryicon.png';
 
 const skills = [
   { name: 'HTML', icon: 'fab fa-html5', color: '#E34F26' },
