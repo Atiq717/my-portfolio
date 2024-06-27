@@ -214,7 +214,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-left: -507px; /* Move the cards to the left by 93px */
+      margin-left: -99%;
     }
   
     .card {
@@ -284,7 +284,7 @@ body {
     }
   
     .top {
-      display: none; /* Hide the .top class */
+      display: none; 
     }
   
     .card:nth-child(1),

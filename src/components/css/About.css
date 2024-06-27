@@ -154,8 +154,10 @@
   #about {
     padding: 50px 0;
     color: #ababab;
-    text-align: left; /* Changed from center to left */
-    padding-left: -75px; /* Added left padding to move everything to the left */
+    text-align: left; 
+    padding-left: 20px; 
+    margin: -0 auto;
+
   }
 
   .container {
@@ -163,23 +165,23 @@
     align-items: flex-start;
     padding: 0;
     animation: slideInRight 1.5s ease-in-out;
-    margin-left: -75px;
+    margin: -0 auto;
   }
 
   .row {
     flex-direction: column;
-    align-items: flex-start; /* Changed from center to flex-start */
+    align-items: flex-start;
     width: 100%;
-    padding-left: 0px; /* Added left padding to move everything to the left */
-    margin-left: -75px;
+    padding-left: 0px; 
+    margin: -0 auto;
   }
 
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
-    text-align: left; /* Changed from center to left */
+    text-align: left; 
     margin-bottom: 20px;
-    margin-left: -75px;
+    margin: -0 auto;
   }
 
   .about-col-1 img {
@@ -190,7 +192,7 @@
     padding: 0px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    margin-left: -125px;
+    margin: -0 auto;
   }
 
   .sub-title {
@@ -198,10 +200,10 @@
   }
 
   .tab-titles {
-    justify-content: flex-start; /* Changed from center to flex-start */
+    justify-content: flex-start; 
     margin: 20px 0;
-    padding-left: 0px; /* Added left padding to move everything to the left */
-    margin-left: 0px;
+    padding-left: 0px; 
+    margin: -0 auto;
   }
 
   .tab-links {
