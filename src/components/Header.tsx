@@ -11,8 +11,8 @@ const Header: React.FC = () => {
   const handleClose = () => setShowModal(false);
 
   return (
-    <header className="header container-fluid">
-      <Navbar bg="black" variant="dark" expand="lg">
+    <header className="header">
+      <Navbar className='navbar' bg="black" variant="dark" expand="lg">
         <Container fluid>
           <Navbar.Brand href="#">
             <img src={logoBlue} alt="M.Khan" width="50" height="50" className="d-inline-block align-top" />
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div className="header-content">
+      <div className="header-content text-center mt-5">
         <div className="header-text">
           <p>Full Stack Developer</p>
           <h1>
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           </h1>
           <h1 className="uk">From The UK</h1>
         </div>
-        <div className="btn-box">
+        <div className="btn-box mt-4">
           <Button onClick={handleShow} className="btn btn-primary">C.V</Button>
           <a href="https://github.com/Atiq717?tab=repositories" target="_blank" className="btn btn-secondary">GitHub</a>
         </div>

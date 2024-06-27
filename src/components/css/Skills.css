@@ -72,5 +72,132 @@
     .skills-section{
         width: 100vh;
     }
-}
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .skills-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  .skills-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .skills-title span {
+    color: #007bff; 
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .skill-card i, .skill-card img {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .skill-card img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  .skill-card h3 {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+  
+  .skill-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-section {
+      padding: 30px 0;
+    }
+  
+    .skills-title {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+  
+    .skill-card {
+      width: 80px;
+      padding: 15px;
+      margin: 5px;
+    }
+  
+    .skill-card i, .skill-card img {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+  
+    .skill-card h3 {
+      font-size: 0.6rem;
+    }
+  }
+  
+  @media (max-width: 567px) {
+    .skills-section {
+      max-width: 100%;
+      padding: 20px 0;
+    }
+  
+    .skills-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .skills-grid {
+      max-width: 100%;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .skill-card {
+      width: 70px;
+      padding: 10px;
+      margin: 5px 0;
+    }
+  
+    .skill-card i, .skill-card img {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+  
+    .skill-card h3 {
+      font-size: 0.5rem;
+    }
+  }
+  
+
   

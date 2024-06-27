@@ -53,8 +53,8 @@
   }
   
   .header .navbar-brand img {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
   }
   
   .nav-links {
@@ -151,3 +151,72 @@
     }
   }
   
+  @media (max-width: 567px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: 100vh;
+        background-image: url('/src/assets/image/background.2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        animation: fadeIn 1s ease-in-out;
+        padding: 10px;
+    }
+
+    .header .navbar {
+        width: 100%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .header .navbar-brand {
+        flex: 1;
+    }
+
+    .header .navbar-nav {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-content {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header-text span,
+    .header-text .second-header,
+    .header-text .third-header,
+    .uk {
+        margin-left: 0;
+        font-size: 50px;
+    }
+
+    .btn-box {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .btn-box .btn {
+        margin-bottom: 10px;
+        width: auto;
+        width: 35%;
+    }
+}
